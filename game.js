@@ -1,8 +1,18 @@
 let gameState = {};
 
-function preload() {}
+function preload() {
+  // load in background and characters
+  this.load.image("bg", "../media/adventuregamebackground.png");
+  this.load.image("knight", "../media/adventuregameknight.png");
+  this.load.image("orc", "../media/adventuregameorc.png");
+  this.load.image("wizard", "../media/adventuregamewizard.png");
+}
 
-function create() {}
+function create() {
+  gameState.background = this.add.image(0, 0, "bg");
+  gameState.background.setOrigin(0, 0);
+  gameState.character = renderCharacter(this, "orc");
+}
 
 function renderCharacter(scene, key) {}
 
