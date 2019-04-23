@@ -502,7 +502,7 @@ function fetchPage(page) {
       character: "wizard",
       page: 37,
       narrative:
-        "The wizard is a very sore loser and casts a banishing spell on you! Sheesh!\nTHE END",
+        "The wizard is a very sore loser and casts a banishing spell on you! You're now dead! Sheesh!\nTHE END",
       options: [{ option: "Play again", nextPage: 1 }]
     },
 
@@ -555,7 +555,7 @@ function fetchPage(page) {
       character: "wizard",
       page: 29,
       narrative:
-        "Wizard: I will send you back in time, try being nicer to the orc.",
+        "Wizard: I will send you back in time, try being nicer to the orc. He's a cool guy.",
       options: [{ option: "OK", nextPage: 1 }]
     },
 
