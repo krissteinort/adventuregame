@@ -290,7 +290,7 @@ function fetchPage(page) {
     {
       character: "knight",
       page: 13,
-      narrative: "Knight: Just an interested party.",
+      narrative: "Knight: Just an interested party. Who happens to hate orcs.",
       options: [
         { option: "Whatever.", nextPage: 25 },
         { option: "You're right", nextPage: 17 }
@@ -316,7 +316,7 @@ function fetchPage(page) {
       character: "knight",
       page: 22,
       narrative:
-        "But thinking about it later you realize you should've been more proactive.\nGAME OVER",
+        "But thinking about it later you realize you should've been more proactive and were kind of a dick.\nGAME OVER",
       options: [{ option: "Play again", nextPage: 1 }]
     },
 
@@ -343,7 +343,7 @@ function fetchPage(page) {
       character: "knight",
       page: 16,
       narrative:
-        "But the knight continues being weird and rude for some reason.\nGAME OVER",
+        "But the knight continues being weird and rude for some reason. Racists am I right?\nGAME OVER",
       options: [{ option: "Play again", nextPage: 1 }]
     },
 
