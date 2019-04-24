@@ -2,10 +2,22 @@ let gameState = {};
 
 function preload() {
   // load in background and characters
-  this.load.image("bg", "../Media/adventuregamebackground.png/");
-  this.load.image("knight", "../Media/adventuregameknight.png/");
-  this.load.image("orc", "../Media/adventuregameorc.png/");
-  this.load.image("wizard", "../Media/adventuregamewizard.png/");
+  this.load.image(
+    "bg",
+    "https://krissteinort.github.io/adventuregame/Media/adventuregamebackground.png?raw=true"
+  );
+  this.load.image(
+    "knight",
+    "https://krissteinort.github.io/adventuregame/Media/adventuregameknight.png?raw=true"
+  );
+  this.load.image(
+    "orc",
+    "https://krissteinort.github.io/adventuregame/Media/adventuregameorc.png?raw=true"
+  );
+  this.load.image(
+    "wizard",
+    "https://krissteinort.github.io/adventuregame/Media/adventuregamewizard.png?raw=true"
+  );
 }
 
 function create() {
