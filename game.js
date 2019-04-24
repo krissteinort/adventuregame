@@ -2,10 +2,10 @@ let gameState = {};
 
 function preload() {
   // load in background and characters
-  this.load.image("bg", "/Media/adventuregamebackground.png/");
-  this.load.image("knight", "/Media/adventuregameknight.png/");
-  this.load.image("orc", "/Media/adventuregameorc.png/");
-  this.load.image("wizard", "/Media/adventuregamewizard.png/");
+  this.load.image("bg", "../Media/adventuregamebackground.png/");
+  this.load.image("knight", "../Media/adventuregameknight.png/");
+  this.load.image("orc", "../Media/adventuregameorc.png/");
+  this.load.image("wizard", "../Media/adventuregamewizard.png/");
 }
 
 function create() {
