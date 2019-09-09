@@ -2,7 +2,7 @@ let gameState = {};
 
 function preload() {
   // load in background and characters
-  this.load.image("bg", "/Media/dungeon.jpg");
+  this.load.image("bg", "/Media/adventuregamebackground.png");
   this.load.image(
     "knight",
     "https://krissteinort.github.io/adventuregame/Media/adventuregameknight.png?raw=true"
