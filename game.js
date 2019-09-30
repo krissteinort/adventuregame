@@ -2,7 +2,9 @@ let gameState = {};
 
 function preload() {
   // load in background and characters
-  this.load.image("bg", "/Media/adventuregamebackground.png");
+  this.load.image(
+    "bg", 
+    "https://krissteinort.github.io/adventuregame/Media/adventuregamebackground.png?raw=true");
   this.load.image(
     "knight",
     "https://krissteinort.github.io/adventuregame/Media/adventuregameknight.png?raw=true"
@@ -30,7 +32,7 @@ function renderCharacter(scene, key) {
   if (gameState.character) {
     gameState.character.destroy();
   }
-  gameState.character = scene.add.image(280, 300, key);
+  gameState.character = scene.add.image(280, 320, key);
   gameState.character.setOrigin(0.5, 1);
   gameState.character.setScale(0.6);
 }
@@ -49,7 +51,7 @@ function initializePage(scene) {
       10,
       360,
       430,
-      170,
+      180,
       0x000
     );
     gameState.narrative_background.setOrigin(0, 0);
@@ -82,7 +84,7 @@ function displayPage(scene, page) {
 
   // display general page character & narrative here:
   renderCharacter(scene, page.character);
-  gameState.narrative = scene.add.text(85, 350, page.narrative, narrativeStyle);
+  gameState.narrative = scene.add.text(40, 380, page.narrative, narrativeStyle);
 
   // for-loop creates different options need the index i for spacing the boxes
   for (let i = 0; i < page.options.length; i++) {
@@ -158,8 +160,8 @@ const config = {
   type: Phaser.WEBGL,
   parent: "phaser-game",
   backgroundColor: 0xfea0fd,
-  width: 800,
-  height: 450,
+  width: 450,
+  height: 550,
   scene: {
     preload,
     create
